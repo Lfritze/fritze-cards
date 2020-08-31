@@ -24,8 +24,9 @@
     "@babel/preset-env": "^7.11.0",
     "nodemon": "^2.0.4"
   },
+  "homepage": "https://github.com/Lfritze/fritze-cards",
   "engines": {
-    "node": "12.13.1",
-    "npm": "6.13.7"
+    "node": "12.4.0",
+    "npm": "6.13.0"
   }
 }
