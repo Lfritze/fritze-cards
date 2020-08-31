@@ -3,14 +3,14 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+exports.default = void 0;
 
 var _mongoose = _interopRequireDefault(require("mongoose"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /* Product Schema */
-var productSchema = new _mongoose["default"].Schema({
+const productSchema = new _mongoose.default.Schema({
   name: {
     type: String,
     required: true
@@ -25,7 +25,7 @@ var productSchema = new _mongoose["default"].Schema({
   },
   price: {
     type: Number,
-    "default": 0,
+    default: 0,
     required: true
   },
   category: {
@@ -34,7 +34,7 @@ var productSchema = new _mongoose["default"].Schema({
   },
   countInStock: {
     type: Number,
-    "default": 0,
+    default: 0,
     required: true
   },
   description: {
@@ -43,18 +43,18 @@ var productSchema = new _mongoose["default"].Schema({
   },
   rating: {
     type: Number,
-    "default": 0,
+    default: 0,
     required: true
   },
   numReviews: {
     type: Number,
-    "default": 0,
+    default: 0,
     required: true
   }
 });
 /* Model */
 
-var productModel = _mongoose["default"].model("Product", productSchema);
+const productModel = _mongoose.default.model("Product", productSchema);
 
 var _default = productModel;
-exports["default"] = _default;
+exports.default = _default;

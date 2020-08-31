@@ -3,14 +3,14 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+exports.default = void 0;
 
 var _mongoose = _interopRequireDefault(require("mongoose"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /* User Schema */
-var userSchema = new _mongoose["default"].Schema({
+const userSchema = new _mongoose.default.Schema({
   name: {
     type: String,
     required: true
@@ -28,14 +28,14 @@ var userSchema = new _mongoose["default"].Schema({
   isAdmin: {
     type: Boolean,
     required: true,
-    "default": false
+    default: false
   }
 });
 /* Model */
 
-var userModel = _mongoose["default"].model("User", userSchema);
+const userModel = _mongoose.default.model("User", userSchema);
 
 var _default = userModel;
 /* dropDups: true    note this is deprecated*/
 
-exports["default"] = _default;
+exports.default = _default;
